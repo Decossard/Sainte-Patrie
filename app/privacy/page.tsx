@@ -1,54 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Sainte-Patrie</title>
-  <meta name="description" content="Privacy policy for Sainte-Patrie. Learn what data we collect, how we use it, and your rights." />
-  <meta name="author" content="DSDC" />
-  <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://sainte-patrie.com/privacy.html" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+import type { Metadata } from 'next'
+import Link from 'next/link'
 
-  <a class="skip-link" href="#main-content">Skip to content</a>
+export const metadata: Metadata = {
+  title: 'Privacy Policy — Sainte-Patrie',
+  description: 'Privacy policy for Sainte-Patrie. Learn what data we collect, how we use it, and your rights.',
+  robots: { index: false, follow: true },
+  alternates: { canonical: 'https://sainte-patrie.com/privacy' },
+}
 
-  <header>
-    <div class="container">
-      <a href="index.html" class="site-name">Sainte-Patrie</a>
-      <nav>
-        <a href="team.html">The Team</a>
-        <a href="founders.html">Join Us</a>
-        <a href="mailto:contact@sainte-patrie.com">Contact</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <div class="container">
-
+export default function Privacy() {
+  return (
+    <>
       <h1>Privacy Policy.</h1>
 
-      <p class="subheading">
+      <p className="subheading">
         We collect limited information, only when you choose to share it. This page explains exactly what, why, and how.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>Who We Are</h2>
       <p>
         This website is operated by DSDC, a Haitian-founded development corporation and the organization behind the Sainte-Patrie city project. For any questions about this policy or your data, contact us at <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>What We Collect</h2>
       <p>
         We collect personal information only when you voluntarily submit it through our survey form. This includes:
       </p>
-      <ul class="bullet-list">
+      <ul className="bullet-list">
         <li>Your full name</li>
         <li>Your email address</li>
         <li>Your responses to the survey questions</li>
@@ -57,7 +39,7 @@
         We do not collect any other personal data. This website sets no cookies, uses no analytics tools, and contains no tracking pixels or third-party advertising scripts. If you only browse the site without submitting a form, no information about you is collected.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>How We Collect It</h2>
       <p>
@@ -67,7 +49,7 @@
         We do not operate our own data servers. We receive your submission as an email and store it within our email system.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>Why We Collect It</h2>
       <p>
@@ -77,27 +59,27 @@
         We do not use your information for marketing unrelated to Sainte-Patrie, and we do not share, sell, or transfer your personal information to any third party for commercial purposes.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>How Long We Keep It</h2>
       <p>
         We retain form submission data for as long as the Sainte-Patrie project is active and the information remains relevant to our work. If you request deletion of your data, we will remove it within 30 days.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>Who Has Access</h2>
       <p>
         Only members of the DSDC team directly involved in the Sainte-Patrie project have access to submitted data. Access is limited to those who need it to follow up with interested parties or to analyze project interest.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>Your Rights</h2>
       <p>
         Regardless of where you are located, you have the right to:
       </p>
-      <ul class="bullet-list">
+      <ul className="bullet-list">
         <li>Request a copy of the personal data we hold about you</li>
         <li>Request correction of any inaccurate information</li>
         <li>Request deletion of your data at any time</li>
@@ -108,25 +90,15 @@
         To exercise any of these rights, send a request to <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>. We will respond within 30 days.
       </p>
 
-      <hr class="divider" />
+      <hr className="divider" />
 
       <h2>Changes to This Policy</h2>
       <p>
         We may update this policy as the project evolves and our data practices change. The most recent version will always be available at this address. Material changes will be noted at the top of the page with an updated date.
       </p>
-      <p style="font-size: 0.88rem; color: var(--muted); font-style: italic;">
+      <p style={{ fontSize: '0.88rem', color: 'var(--muted)', fontStyle: 'italic' }}>
         Last updated: March 2026
       </p>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>Sainte-Patrie &mdash; by DSDC</p>
-      <p>Updated March 2026 &middot; <a href="privacy.html">Privacy</a></p>
-    </div>
-  </footer>
-
-</body>
-</html>
+    </>
+  )
+}

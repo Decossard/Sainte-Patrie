@@ -34,13 +34,12 @@ body {
 }
 
 /* ── Topographic background ──────────────────────── */
-/* To revert: delete this block */
 
 body::before {
   content: '';
   position: fixed;
   inset: -10%;
-  background-image: url('wp14106334-4k-topographic-wallpapers.jpg');
+  background-image: url('/wp14106334-4k-topographic-wallpapers.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -356,7 +355,6 @@ a {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -506,6 +504,7 @@ section .faq-item {
 
 .survey-text-input:focus {
   border-bottom-color: var(--text);
+  outline: none;
 }
 
 .survey-text-input::placeholder {
@@ -603,6 +602,7 @@ textarea {
 
 textarea:focus {
   border-bottom-color: var(--text);
+  outline: none;
 }
 
 textarea::placeholder {
@@ -647,10 +647,6 @@ textarea::placeholder {
 
 .survey-success {
   padding: 60px 0;
-}
-
-.survey-success.is-visible {
-  animation: fadeInUp 0.4s ease;
 }
 
 .survey-success p {

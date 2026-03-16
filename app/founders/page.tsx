@@ -1,68 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Founding Institutions — Sainte-Patrie | Haiti City Development</title>
-  <meta name="description" content="Sainte-Patrie is inviting institutions ready to help build Haiti's first planned city — a new urban alternative to Port-au-Prince. Learn what it means to become a founding institution." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sainte-Patrie" />
-  <meta property="og:title" content="Founding Institutions — Sainte-Patrie | Haiti City Development" />
-  <meta property="og:description" content="Sainte-Patrie is inviting institutions ready to help build Haiti's first planned city — a new urban alternative outside Port-au-Prince. Contribute before success is guaranteed." />
-  <meta property="og:url" content="https://sainte-patrie.com/founders.html" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Founding Institutions — Sainte-Patrie | Haiti City Development" />
-  <meta name="twitter:description" content="Help build Haiti's first planned city — a new urban alternative outside Port-au-Prince. Become a founding institution of Sainte-Patrie." />
-  <meta name="author" content="DSDC" />
-  <meta name="geo.region" content="HT" />
-  <meta name="geo.placename" content="Haiti" />
-  <meta name="geo.position" content="18.9712;-72.2852" />
-  <meta name="ICBM" content="18.9712, -72.2852" />
-  <meta name="keywords" content="Haiti city development, founding institution Haiti, Port-au-Prince alternative, Haiti planned city, Sainte-Patrie, DSDC, Haiti urban development" />
-  <link rel="canonical" href="https://sainte-patrie.com/founders.html" />
-  <link rel="stylesheet" href="style.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Become a Founding Institution — Sainte-Patrie",
-    "url": "https://sainte-patrie.com/founders.html",
-    "description": "Sainte-Patrie is inviting institutions ready to contribute before success is guaranteed. Founding institutions help build legal, financial, and institutional credibility during the city's formative stage.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "DSDC",
-      "url": "https://sainte-patrie.com",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "founders@sainte-patrie.com",
-        "contactType": "partnerships"
-      }
-    }
-  }
-  </script>
-</head>
-<body>
+import type { Metadata } from 'next'
+import Script from 'next/script'
 
-  <a class="skip-link" href="#main-content">Skip to content</a>
+export const metadata: Metadata = {
+  title: 'Founding Institutions — Sainte-Patrie | Haiti City Development',
+  description: "Sainte-Patrie is inviting institutions ready to help build Haiti's first planned city — a new urban alternative to Port-au-Prince. Learn what it means to become a founding institution.",
+  keywords: 'Haiti city development, founding institution Haiti, Port-au-Prince alternative, Haiti planned city, Sainte-Patrie, DSDC, Haiti urban development',
+  openGraph: {
+    type: 'website',
+    siteName: 'Sainte-Patrie',
+    title: 'Founding Institutions — Sainte-Patrie | Haiti City Development',
+    description: "Sainte-Patrie is inviting institutions ready to help build Haiti's first planned city — a new urban alternative outside Port-au-Prince. Contribute before success is guaranteed.",
+    url: 'https://sainte-patrie.com/founders',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Founding Institutions — Sainte-Patrie | Haiti City Development',
+    description: "Help build Haiti's first planned city — a new urban alternative outside Port-au-Prince. Become a founding institution of Sainte-Patrie.",
+  },
+  alternates: { canonical: 'https://sainte-patrie.com/founders' },
+}
 
-  <header>
-    <div class="container">
-      <a href="index.html" class="site-name">Sainte-Patrie</a>
-      <nav>
-        <a href="team.html">The Team</a>
-        <a href="founders.html" class="active">Join Us</a>
-        <a href="mailto:contact@sainte-patrie.com">Contact</a>
-        <a href="faq.html">FAQ</a>
-      </nav>
-    </div>
-  </header>
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Become a Founding Institution — Sainte-Patrie',
+  url: 'https://sainte-patrie.com/founders',
+  description: "Sainte-Patrie is inviting institutions ready to contribute before success is guaranteed. Founding institutions help build legal, financial, and institutional credibility during the city's formative stage.",
+  publisher: {
+    '@type': 'Organization',
+    name: 'DSDC',
+    url: 'https://sainte-patrie.com',
+    contactPoint: { '@type': 'ContactPoint', email: 'founders@sainte-patrie.com', contactType: 'partnerships' },
+  },
+}
 
-  <main id="main-content">
-    <div class="container">
+export default function Founders() {
+  return (
+    <>
+      <Script id="schema-founders" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <h1>Help Build<br>What Endures.</h1>
+      <h1>Help Build<br />What Endures.</h1>
 
-      <p class="subheading">
+      <p className="subheading">
         Sainte-Patrie is more than a city &mdash; it&rsquo;s a chance to prove that Haiti
         can design and deliver a lawful, safe, and functioning urban community.
       </p>
@@ -75,9 +54,9 @@
         alignment during the city&rsquo;s formative stage.
       </p>
 
-      <div class="founders-section">
+      <div className="founders-section">
 
-        <hr class="divider" />
+        <hr className="divider" />
 
         <h2>Who We&rsquo;re Looking For</h2>
         <p>
@@ -94,7 +73,7 @@
           diaspora organizations, or other legally constituted entities.
         </p>
 
-        <hr class="divider" />
+        <hr className="divider" />
 
         <h2>What It Means to Be a Founding Institution</h2>
         <p>
@@ -112,14 +91,14 @@
           operational involvement, or privileged influence within the commune&rsquo;s
           institutions.
         </p>
-        <p class="page-note">
+        <p className="page-note">
           Note: Being selected for consideration does not guarantee recognition.
           Contributions will be carefully evaluated for relevance and impact. Recognition
           as a Founding Institution will be granted only after formal review once the
           commune is established.
         </p>
 
-        <hr class="divider" />
+        <hr className="divider" />
 
         <h2>Recognition, Not Reward</h2>
         <p>
@@ -127,7 +106,7 @@
           civic recognition acknowledging their role in the founding of Sainte-Patrie.
           These may include:
         </p>
-        <ul class="bullet-list">
+        <ul className="bullet-list">
           <li>Inclusion in the Founding Institutions Registry</li>
           <li>Inscription on the Founding Wall within the city</li>
           <li>Archival documentation of the institution&rsquo;s contribution</li>
@@ -139,7 +118,7 @@
           involvement, or privileged access to public resources.
         </p>
 
-        <hr class="divider" />
+        <hr className="divider" />
 
         <h2>A Legacy Beyond Land</h2>
         <p>
@@ -153,10 +132,10 @@
           the conditions under which the city will grow for decades to come.
         </p>
 
-        <hr class="divider" />
+        <hr className="divider" />
 
         <h2>Know the Risk</h2>
-        <div class="risk-note">
+        <div className="risk-note">
           <p>
             Sainte-Patrie is ambitious &mdash; and Haiti is a difficult terrain. Like any
             bold undertaking, this could fail. If that possibility makes an institution
@@ -165,14 +144,14 @@
           </p>
         </div>
 
-        <div class="intent-box">
+        <div className="intent-box">
           <h3>How to Be Considered</h3>
           <p>
-            To express interest, send a short letter of intent to
-            <a href="mailto:founders@sainte-patrie.com">founders@sainte-patrie.com</a>
+            To express interest, send a short letter of intent to{' '}
+            <a href="mailto:founders@sainte-patrie.com">founders@sainte-patrie.com</a>{' '}
             explaining:
           </p>
-          <ul class="bullet-list">
+          <ul className="bullet-list">
             <li>The institution</li>
             <li>What it can contribute</li>
             <li>What it has done, if applicable</li>
@@ -182,22 +161,12 @@
             Supporting materials such as institutional profiles, references, or project
             proposals may also be included. Only selected institutions will be contacted.
           </p>
-          <a class="email-cta" href="mailto:founders@sainte-patrie.com">
+          <a className="email-cta" href="mailto:founders@sainte-patrie.com">
             Send Your Letter of Intent &rarr;
           </a>
         </div>
 
       </div>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>Sainte-Patrie &mdash; by DSDC</p>
-      <p>Updated March 2026 &middot; <a href="privacy.html">Privacy</a></p>
-    </div>
-  </footer>
-
-</body>
-</html>
+    </>
+  )
+}
