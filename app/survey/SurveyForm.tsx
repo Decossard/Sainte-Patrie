@@ -9,6 +9,7 @@ function Options({ name, options }: { name: string; options: string[] }) {
       {options.map((opt) => (
         <label key={opt} className="survey-option">
           <input type="checkbox" name={name} value={opt} />
+          <span className="survey-radio" />
           <span>{opt}</span>
         </label>
       ))}
