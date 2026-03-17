@@ -112,13 +112,6 @@ header .container {
   color: var(--text);
   text-decoration: none;
   opacity: 0.75;
-  transition: opacity 0.15s ease;
-}
-
-@media (hover: hover) {
-  .site-name:hover {
-    opacity: 1;
-  }
 }
 
 nav {
@@ -133,17 +126,10 @@ nav a {
   text-decoration: none;
   letter-spacing: 0.04em;
   opacity: 0.4;
-  transition: opacity 0.15s ease;
 }
 
 nav a.active {
   opacity: 1;
-}
-
-@media (hover: hover) {
-  nav a:hover {
-    opacity: 1;
-  }
 }
 
 /* ── Typography ──────────────────────────────────── */
