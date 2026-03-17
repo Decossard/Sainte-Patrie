@@ -525,16 +525,17 @@ section .faq-item {
 }
 
 .survey-q-number {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  color: var(--muted);
   opacity: 0.5;
 }
 
 .survey-q-text {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  margin-bottom: 28px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
 }
 
 .survey-options {
