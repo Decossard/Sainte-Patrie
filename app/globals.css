@@ -115,8 +115,10 @@ header .container {
   transition: opacity 0.15s;
 }
 
-.site-name:hover {
-  opacity: 1;
+@media (hover: hover) {
+  .site-name:hover {
+    opacity: 1;
+  }
 }
 
 nav {
@@ -134,9 +136,14 @@ nav a {
   transition: opacity 0.15s;
 }
 
-nav a:hover,
 nav a.active {
   opacity: 1;
+}
+
+@media (hover: hover) {
+  nav a:hover {
+    opacity: 1;
+  }
 }
 
 /* ── Typography ──────────────────────────────────── */
