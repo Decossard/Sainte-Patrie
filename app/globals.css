@@ -111,6 +111,12 @@ header .container {
   text-transform: uppercase;
   color: var(--text);
   text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.15s;
+}
+
+.site-name:hover {
+  opacity: 1;
 }
 
 nav {
@@ -519,7 +525,8 @@ section .faq-item {
   border-top: 1px solid var(--border);
 }
 
-.survey-question:first-of-type {
+.survey-question:first-of-type,
+.survey-question--first {
   border-top: none;
   padding-top: 0;
 }
