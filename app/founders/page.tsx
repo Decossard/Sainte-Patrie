@@ -137,10 +137,9 @@ export default function Founders() {
         <h2>Know the Risk</h2>
         <div className="risk-note">
           <p>
-            Sainte-Patrie is ambitious &mdash; and Haiti is a difficult terrain. Like any
-            bold undertaking, this could fail. If that possibility makes an institution
-            hesitate, this may not be the right opportunity. But if an institution moves
-            forward knowing the risk, then it is the kind of partner this call is meant for.
+            Haiti is a difficult terrain. This project is ambitious by design. The risk
+            is real and we are not minimising it. The right partner already knows that,
+            and comes forward anyway.
           </p>
         </div>
 
