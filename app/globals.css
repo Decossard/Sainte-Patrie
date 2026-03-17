@@ -367,7 +367,7 @@ a {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
-  margin: 96px 0 0;
+  margin: 56px 0 0;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border);
 }
@@ -377,9 +377,12 @@ a {
 }
 
 .faq-item {
-  border: none;
+  border-top: 1px solid var(--border-subtle);
 }
 
+.faq-item:last-of-type {
+  border-bottom: 1px solid var(--border-subtle);
+}
 
 .faq-question {
   display: flex;
