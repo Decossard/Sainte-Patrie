@@ -7,6 +7,7 @@
 :root {
   --bg: #ffffff;
   --text: #002060;
+  --text-dim: #4a5c78;
   --muted: #002060;
   --border: transparent;
   --accent-bg: #f0f4ff;
@@ -108,9 +109,8 @@ header .container {
   font-weight: normal;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--text-dim);
   text-decoration: none;
-  opacity: 0.75;
 }
 
 nav {
@@ -120,14 +120,13 @@ nav {
 
 nav a {
   font-size: 0.85rem;
-  color: var(--text);
+  color: var(--text-dim);
   text-decoration: none;
   letter-spacing: 0.04em;
-  opacity: 0.4;
 }
 
 nav a.active {
-  opacity: 1;
+  color: var(--text);
 }
 
 /* ── Typography ──────────────────────────────────── */
@@ -408,7 +407,7 @@ details[open].faq-item {
   font-size: 1.1rem;
   flex-shrink: 0;
   transition: transform 0.2s;
-  opacity: 0.5;
+  color: var(--text-dim);
 }
 
 details[open] > .faq-question::after {
@@ -416,7 +415,7 @@ details[open] > .faq-question::after {
 }
 
 details[open] > .faq-question {
-  opacity: 0.4;
+  color: var(--text-dim);
 }
 
 /* ── FAQ expand/collapse all ─────────────────────── */
@@ -427,19 +426,13 @@ details[open] > .faq-question {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text);
-  opacity: 0.4;
+  color: var(--text-dim);
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   font-family: inherit;
-  transition: opacity 0.15s;
   margin-top: 28px;
-}
-
-.faq-toggle-btn:hover {
-  opacity: 0.8;
 }
 
 .faq-body {
@@ -522,7 +515,7 @@ section .faq-item {
 }
 
 .survey-q-number {
-  opacity: 0.5;
+  color: var(--text-dim);
 }
 
 .survey-q-text {
@@ -567,15 +560,14 @@ section .faq-item {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1px solid var(--text);
-  opacity: 0.25;
+  border: 1px solid var(--text-dim);
   flex-shrink: 0;
-  transition: background 0.15s, opacity 0.15s;
+  transition: background 0.15s, border-color 0.15s;
 }
 
 .survey-option:has(input:checked) .survey-radio {
   background: var(--text);
-  opacity: 1;
+  border-color: var(--text);
 }
 
 .survey-option:has(input:checked) {
@@ -864,5 +856,15 @@ footer p {
   footer .container {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* ── Reduced motion ──────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

@@ -50,9 +50,11 @@ export default function FaqClient() {
         </ol>
       </nav>
 
-      <button className="faq-toggle-btn" onClick={toggleAll}>
+      <button className="faq-toggle-btn" onClick={toggleAll} aria-expanded={expanded} aria-controls="faq-sections">
         {expanded ? 'Collapse all' : 'Expand all'}
       </button>
+
+      <div id="faq-sections">
 
       {/* 1. About the Project */}
       <section id="about">
@@ -358,6 +360,8 @@ export default function FaqClient() {
           <p className="faq-answer">Sainte-Patrie differs in one fundamental respect: it operates under Haiti&rsquo;s existing legal framework with no separate jurisdiction, no private governance, and no foreign legal authority. It is designed to be a public municipality governed by elected officials, subject to Haitian national law in the same way as any other city in the country. The goal is not a showcase or an enclave but a functioning ordinary city in one of the Caribbean&rsquo;s most challenging contexts.</p>
         </FaqItem>
       </section>
+
+      </div>{/* end #faq-sections */}
 
       <hr className="divider" />
 
