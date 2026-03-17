@@ -378,6 +378,7 @@ a {
 
 .faq-item {
   border-top: 1px solid var(--border-subtle);
+  border-bottom: none;
 }
 
 
