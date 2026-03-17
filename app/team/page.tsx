@@ -28,10 +28,10 @@ const schema = {
   description: 'Sainte-Patrie is being developed by DSDC, a Haitian-founded development corporation.',
   about: {
     '@type': 'Person',
-    name: 'McLynn H. L. Décossard',
+    name: 'McLynn Hyaad Lomeih Décossard',
     jobTitle: 'Founder, DSDC',
     nationality: 'Haitian',
-    description: 'For nearly a decade McLynn Décossard helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. He applied that study to Haiti, developing the governance framework behind Sainte-Patrie from Haitian constitutional law and international municipal practice.',
+    description: 'For nearly a decade McLynn helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. He applied that study to Haiti, developing the governance framework behind Sainte-Patrie from Haitian constitutional law and international municipal practice.',
     worksFor: { '@type': 'Organization', name: 'DSDC', url: 'https://sainte-patrie.com' },
   },
 }
@@ -52,10 +52,10 @@ export default function Team() {
       <h2>The Founder</h2>
 
       <div className="team-person">
-        <p className="team-person-name">McLynn H. L. D&eacute;cossard</p>
+        <p className="team-person-name">McLynn Hyaad Lomeih D&eacute;cossard</p>
         <p className="team-person-role">Founder, DSDC</p>
         <p>
-          McLynn D&eacute;cossard is Haitian. For nearly a decade he helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. That work was a long study in what institutions have to look like for people to trust them. He applied that study to Haiti.
+          McLynn is Haitian. For nearly a decade he helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. That work was a long study in what institutions have to look like for people to trust them. He applied that study to Haiti.
         </p>
         <p>
           Sainte-Patrie is the result. A governance framework built from Haitian constitutional law, international municipal practice, and a clear-eyed understanding of what has failed before and why.
