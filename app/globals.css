@@ -544,49 +544,27 @@ section .faq-item {
 }
 
 .survey-option {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
+  display: block;
   padding: 13px 0;
   border-top: 1px solid var(--border);
   cursor: pointer;
   font-size: 0.93rem;
   color: var(--text);
-  transition: opacity 0.15s;
-}
-
-.survey-option:hover {
-  opacity: 0.5;
 }
 
 .survey-option:last-child {
   border-bottom: 1px solid var(--border);
 }
 
-.survey-option input[type="radio"] {
+.survey-option input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.survey-check {
-  width: 13px;
-  height: 13px;
-  border: 1px solid var(--text);
-  flex-shrink: 0;
-  opacity: 0.2;
-  transition: background 0.15s, opacity 0.15s;
-}
-
 .survey-option:has(input:checked) {
   font-style: italic;
-}
-
-.survey-option:has(input:checked) .survey-check {
-  background: var(--text);
-  opacity: 1;
 }
 
 textarea {

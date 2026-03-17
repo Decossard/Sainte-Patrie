@@ -3,6 +3,19 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
+function Options({ name, options }: { name: string; options: string[] }) {
+  return (
+    <div className="survey-options">
+      {options.map((opt) => (
+        <label key={opt} className="survey-option">
+          <input type="checkbox" name={name} value={opt} />
+          <span>{opt}</span>
+        </label>
+      ))}
+    </div>
+  )
+}
+
 export default function SurveyForm() {
   const [submitted, setSubmitted] = useState(false)
 
@@ -71,100 +84,60 @@ export default function SurveyForm() {
         {/* Q1 */}
         <div className="survey-question">
           <p className="survey-q-text"><span className="survey-q-number">01 &mdash;</span> How long have you been outside Haiti?</p>
-          <div className="survey-options">
-            {[
-              'Less than 2 years',
-              '2 to 5 years',
-              '5 to 15 years',
-              'More than 15 years',
-              'I was born abroad',
-            ].map((opt) => (
-              <label key={opt} className="survey-option">
-                <input type="radio" name="q1_time_abroad" value={opt} required />
-                <span>{opt}</span>
-                <span className="survey-check" />
-              </label>
-            ))}
-          </div>
+          <Options name="q1_time_abroad" options={[
+            'Less than 2 years',
+            '2 to 5 years',
+            '5 to 15 years',
+            'More than 15 years',
+            'I was born abroad',
+          ]} />
         </div>
 
         {/* Q2 */}
         <div className="survey-question">
           <p className="survey-q-text"><span className="survey-q-number">02 &mdash;</span> Have you ever tried to invest in Haiti and stopped?</p>
-          <div className="survey-options">
-            {[
-              'Never tried',
-              'Tried and it worked',
-              "Tried and it didn't",
-              "I've been waiting for the right conditions",
-            ].map((opt) => (
-              <label key={opt} className="survey-option">
-                <input type="radio" name="q2_invest_history" value={opt} required />
-                <span>{opt}</span>
-                <span className="survey-check" />
-              </label>
-            ))}
-          </div>
+          <Options name="q2_invest_history" options={[
+            'Never tried',
+            'Tried and it worked',
+            "Tried and it didn't",
+            "I've been waiting for the right conditions",
+          ]} />
         </div>
 
         {/* Q3 */}
         <div className="survey-question">
           <p className="survey-q-text"><span className="survey-q-number">03 &mdash;</span> What has held you back most?</p>
-          <div className="survey-options">
-            {[
-              "I couldn't find a trustworthy structure",
-              "I didn't know where my money would actually go",
-              "I didn't feel safe going back",
-              "I didn't see a project worth believing in",
-              'Nothing has held me back',
-            ].map((opt) => (
-              <label key={opt} className="survey-option">
-                <input type="radio" name="q3_obstacle" value={opt} required />
-                <span>{opt}</span>
-                <span className="survey-check" />
-              </label>
-            ))}
-          </div>
+          <Options name="q3_obstacle" options={[
+            "I couldn't find a trustworthy structure",
+            "I didn't know where my money would actually go",
+            "I didn't feel safe going back",
+            "I didn't see a project worth believing in",
+            'Nothing has held me back',
+          ]} />
         </div>
 
         {/* Q4 */}
         <div className="survey-question">
           <p className="survey-q-text"><span className="survey-q-number">04 &mdash;</span> What does Haiti need to get right first, before anything else?</p>
-          <div className="survey-options">
-            {[
-              'Security',
-              'Property rights and land',
-              'Accountable institutions',
-              'Jobs and economic opportunity',
-              'Political stability',
-            ].map((opt) => (
-              <label key={opt} className="survey-option">
-                <input type="radio" name="q4_priority" value={opt} required />
-                <span>{opt}</span>
-                <span className="survey-check" />
-              </label>
-            ))}
-          </div>
+          <Options name="q4_priority" options={[
+            'Security',
+            'Property rights and land',
+            'Accountable institutions',
+            'Jobs and economic opportunity',
+            'Political stability',
+          ]} />
         </div>
 
         {/* Q5 */}
         <div className="survey-question">
           <p className="survey-q-text"><span className="survey-q-number">05 &mdash;</span> If Sainte-Patrie delivers what it promises, what does that mean to you personally?</p>
-          <div className="survey-options">
-            {[
-              'A place to retire or return to',
-              'Somewhere to invest with confidence',
-              'A reason to believe Haiti can change',
-              'A city for my children or family',
-              'All of the above',
-            ].map((opt) => (
-              <label key={opt} className="survey-option">
-                <input type="radio" name="q5_meaning" value={opt} required />
-                <span>{opt}</span>
-                <span className="survey-check" />
-              </label>
-            ))}
-          </div>
+          <Options name="q5_meaning" options={[
+            'A place to retire or return to',
+            'Somewhere to invest with confidence',
+            'A reason to believe Haiti can change',
+            'A city for my children or family',
+            'All of the above',
+          ]} />
         </div>
 
         {/* Q6 */}
