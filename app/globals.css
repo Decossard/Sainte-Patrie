@@ -112,11 +112,6 @@ header .container {
   color: var(--text);
   text-decoration: none;
   opacity: 0.75;
-  transition: opacity 0.15s;
-}
-
-.site-name.hovered {
-  opacity: 1;
 }
 
 nav {
@@ -131,14 +126,9 @@ nav a {
   text-decoration: none;
   letter-spacing: 0.04em;
   opacity: 0.4;
-  transition: opacity 0.15s;
 }
 
 nav a.active {
-  opacity: 1;
-}
-
-nav a.hovered {
   opacity: 1;
 }
 
