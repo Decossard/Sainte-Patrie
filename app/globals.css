@@ -380,6 +380,11 @@ a {
   border: none;
 }
 
+details[open].faq-item {
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
 .faq-question {
   display: flex;
   justify-content: space-between;
