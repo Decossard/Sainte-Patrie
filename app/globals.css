@@ -377,11 +377,7 @@ a {
 }
 
 .faq-item {
-  border-top: 1px solid var(--border-subtle);
-}
-
-.faq-item:last-of-type {
-  border-bottom: 1px solid var(--border-subtle);
+  border: none;
 }
 
 .faq-question {
