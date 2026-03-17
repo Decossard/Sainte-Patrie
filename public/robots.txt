@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /survey.html
+Disallow: /survey
+Disallow: /privacy
 
 Sitemap: https://sainte-patrie.com/sitemap.xml
