@@ -52,7 +52,7 @@ export default function Team() {
       <h2>The Founder</h2>
 
       <div className="team-person">
-        <p className="team-person-name">McLynn Hyaad Lomeih D&eacute;cossard</p>
+        <p className="team-person-name">McLynn Hyaad Lomeih D.</p>
         <p className="team-person-role">Founder, DSDC</p>
         <p>
           McLynn is Haitian. For nearly a decade he helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. That work was a long study in what institutions have to look like for people to trust them. He applied that study to Haiti.
