@@ -109,7 +109,7 @@ main {
   z-index: 0;
 }
 
-.hero > * {
+.hero > *:not(.hero-bg) {
   position: relative;
   z-index: 1;
 }
