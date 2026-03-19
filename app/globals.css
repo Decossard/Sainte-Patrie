@@ -848,16 +848,45 @@ footer p {
   display: none !important;
 }
 
-/* ── Contact address (homepage) ──────────────────── */
+/* ── Contact section (homepage) ──────────────────── */
 
-.mailing-address {
+.contact-grid {
   font-style: normal;
-  font-size: 0.88rem;
-  line-height: 1.65;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0 32px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border-subtle);
+  align-items: baseline;
+}
+
+.contact-row:last-child {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--muted);
-  opacity: 0.65;
-  margin-top: 6px;
-  margin-bottom: 0;
+}
+
+.contact-value {
+  font-size: 0.93rem;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.contact-value a {
+  color: var(--text);
+  text-decoration: none;
 }
 
 /* ── Reduced motion ──────────────────────────────── */

@@ -187,12 +187,26 @@ export default function Home() {
       <hr className="divider" />
 
       <h2>Contact</h2>
-      <p>
-        For general enquiries: <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>
-      </p>
-      <address className="mailing-address">
-        3801 N Capital of Texas Hwy, Ste. E240-3366<br />
-        Austin, TX&nbsp;78746
+      <address className="contact-grid">
+        <div className="contact-row">
+          <span className="contact-label">Mailing</span>
+          <span className="contact-value">
+            3801 N Capital of Texas Hwy, Ste. E240-3366<br />
+            Austin, TX&nbsp;78746
+          </span>
+        </div>
+        <div className="contact-row">
+          <span className="contact-label">Email</span>
+          <span className="contact-value">
+            <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>
+          </span>
+        </div>
+        <div className="contact-row">
+          <span className="contact-label">WhatsApp</span>
+          <span className="contact-value">
+            <a href="https://wa.me/17375372424">(737) 537-2424</a>
+          </span>
+        </div>
       </address>
     </>
   )
