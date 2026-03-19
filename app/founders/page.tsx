@@ -134,6 +134,12 @@ export default function Founders() {
 
         <hr className="divider" />
 
+        <h2>Where the Project Stands Now</h2>
+        <div className="status-block">
+          <p className="status-label">Current phase</p>
+          <p>Sainte-Patrie is in its preparation phase. The vision, structure, and public case for the project are in place. The next stage is to build the relationships and support needed to engage Haiti&rsquo;s next legitimate government when that window opens.</p>
+        </div>
+
         <h2>Know the Risk</h2>
         <div className="risk-note">
           <p>
