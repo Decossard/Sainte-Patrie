@@ -3,19 +3,19 @@ import Link from 'next/link'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: "Sainte-Patrie — A New Haitian City Designed to Work",
+  title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
   description: "Sainte-Patrie is Haiti's first planned city — a new urban development outside Port-au-Prince, designed for stable governance, reliable services, and a functioning economy. Led by Haitians, built for everyday life.",
   keywords: 'Haiti planned city, new city Haiti, charter city Haiti, Port-au-Prince, Haiti urban development, Haiti diaspora investment, Sainte-Patrie, DSDC, Haiti development project, new city Caribbean',
   openGraph: {
     type: 'website',
     siteName: 'Sainte-Patrie',
-    title: "Sainte-Patrie — A New Haitian City Designed to Work",
+    title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
     description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy. Led by Haitians.",
     url: 'https://sainte-patrie.com/',
   },
   twitter: {
     card: 'summary',
-    title: "Sainte-Patrie — A New Haitian City Designed to Work",
+    title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
     description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy.",
   },
   alternates: { canonical: 'https://sainte-patrie.com/' },
@@ -161,6 +161,11 @@ export default function Home() {
         the country and are ready to build. It won&rsquo;t happen overnight, but the standard
         is already set. It&rsquo;s proof we don&rsquo;t have to settle. Not anymore.
       </p>
+
+      <div className="status-block">
+        <p className="status-label">Where the project stands now</p>
+        <p>Sainte-Patrie is in its preparation phase. The vision, structure, and public case for the project are in place. The next stage is to build the relationships and support needed to engage Haiti&rsquo;s next legitimate government when that window opens.</p>
+      </div>
 
       <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
 
