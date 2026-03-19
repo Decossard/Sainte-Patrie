@@ -155,6 +155,11 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="status-block">
+        <p className="status-label">Where the project stands now</p>
+        <p>Sainte-Patrie is in its preparation phase. The vision, structure, and public case for the project are in place. The next stage is to build the relationships and support needed to engage Haiti&rsquo;s next legitimate government when that window opens.</p>
+      </div>
+
       <h2>For Results, By Design</h2>
       <p>
         This isn&rsquo;t a dream. It&rsquo;s a plan: concrete, phased, and led by people who know
