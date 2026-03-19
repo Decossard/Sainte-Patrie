@@ -60,6 +60,11 @@ export default function FaqClient() {
       <section id="about">
         <p className="faq-section-title">1 &mdash; About the Project</p>
 
+        <FaqItem question="Where will Sainte-Patrie be located?">
+          <p className="faq-answer">The city is planned for the northeast of Haiti, in the Grand Nord, a region with real assets in coastal geography, agricultural land, and proximity to Atlantic trade routes.</p>
+          <p className="faq-answer">The goal is to strengthen the region&rsquo;s capacity to attract private investment, expand economic opportunity, and build the institutional depth that allows growth to compound over time rather than remain concentrated in a single place.</p>
+        </FaqItem>
+
         <FaqItem question="What is Sainte-Patrie?">
           <p className="faq-answer">Sainte-Patrie is a new city being developed in Haiti with one practical purpose: to build an urban environment where institutions function reliably, services operate consistently, and economic opportunity can grow in a stable setting.</p>
           <p className="faq-answer">The project focuses on designing governance, infrastructure, and a service-oriented economy together from the beginning, rather than adding them piecemeal as the city grows. Most urban problems in developing cities come from systems that were never coordinated in the first place.</p>
