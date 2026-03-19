@@ -73,7 +73,7 @@ export default function FaqClient() {
         </FaqItem>
 
         <FaqItem question="Where will Sainte-Patrie be located?">
-          <p className="faq-answer">The city is planned for the northeast of Haiti, in the Grand Nord, a region with real assets in coastal geography, agricultural land, and proximity to Atlantic trade routes.</p>
+          <p className="faq-answer">The city is planned for the northeast of Haiti, in the Grand Nord, a region with real assets in tourism potential and proximity to Atlantic trade routes.</p>
           <p className="faq-answer">The goal is to strengthen the region&rsquo;s capacity to attract private investment, expand economic opportunity, and build the institutional depth that allows growth to compound over time rather than remain concentrated in a single place.</p>
         </FaqItem>
 
