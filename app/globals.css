@@ -94,7 +94,7 @@ main {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   margin-top: -160px;
   padding-top: 160px;
   padding-bottom: 60px;

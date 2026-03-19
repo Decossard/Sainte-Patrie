@@ -69,7 +69,7 @@ export default function Home() {
             fill
             priority
             quality={90}
-            style={{ objectFit: 'cover', objectPosition: '62% center', opacity: 0.12 }}
+            style={{ objectFit: 'cover', objectPosition: '62% center', opacity: 0.2 }}
           />
         </div>
 
