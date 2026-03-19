@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
@@ -60,16 +61,29 @@ export default function Home() {
       <Script id="schema-org" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <Script id="schema-city" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
 
-      <h1>A New Haitian City<br />Designed to Work.</h1>
+      <div className="hero">
+        <div className="hero-bg" aria-hidden="true">
+          <Image
+            src="/hero-map.jpg"
+            alt=""
+            fill
+            priority
+            quality={90}
+            style={{ objectFit: 'cover', objectPosition: '62% center', mixBlendMode: 'multiply', opacity: 0.18 }}
+          />
+        </div>
 
-      <p className="subheading">
-        Led by Haitians and designed for reliable services, safe neighborhoods, and long-term growth.
-      </p>
-      <p className="subheading-note">
-        The project framework is already developed and is being prepared for future alignment with Haiti&rsquo;s next legitimate government.
-      </p>
+        <h1>A New Haitian City<br />Designed to Work.</h1>
 
-      <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
+        <p className="subheading">
+          Led by Haitians and designed for reliable services, safe neighborhoods, and long-term growth.
+        </p>
+        <p className="subheading-note">
+          The project framework is already developed and is being prepared for future alignment with Haiti&rsquo;s next legitimate government.
+        </p>
+
+        <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
+      </div>
 
       <hr className="divider" />
 

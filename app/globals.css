@@ -90,6 +90,28 @@ main {
   padding: 80px 0 120px;
 }
 
+/* ── Hero ────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* ── Header / Nav ────────────────────────────────── */
 
 header {
