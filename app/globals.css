@@ -798,9 +798,8 @@ footer p {
 /* Google Translate widget */
 .goog-te-gadget {
   font-family: "Georgia", serif !important;
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
   color: var(--muted) !important;
-  opacity: 0.55;
 }
 
 .goog-te-gadget-simple {
@@ -809,14 +808,14 @@ footer p {
   border-bottom: 1px solid var(--border-subtle) !important;
   padding: 2px 0 !important;
   font-family: "Georgia", serif !important;
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
 }
 
 .goog-te-gadget-simple a,
 .goog-te-gadget-simple a span {
   color: var(--text) !important;
   font-family: "Georgia", serif !important;
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
   letter-spacing: 0.03em !important;
   text-decoration: none !important;
 }
