@@ -94,7 +94,7 @@ main {
 
 .hero {
   position: relative;
-  padding-bottom: 48px;
+  min-height: 100vh;
 }
 
 .hero-bg {
@@ -107,6 +107,8 @@ main {
   overflow: hidden;
   pointer-events: none;
   z-index: 0;
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 88%);
+  mask-image: linear-gradient(to bottom, black 40%, transparent 88%);
 }
 
 .hero > *:not(.hero-bg) {
