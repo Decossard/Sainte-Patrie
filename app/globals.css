@@ -135,6 +135,21 @@ main {
 .hero > *:not(.hero-bg) {
   position: relative;
   z-index: 1;
+  animation: heroContentFade 0.8s ease both;
+}
+
+.hero > *:not(.hero-bg):nth-child(2) { animation-delay: 0.2s; }
+.hero > *:not(.hero-bg):nth-child(3) { animation-delay: 0.35s; }
+.hero > *:not(.hero-bg):nth-child(4) { animation-delay: 0.5s; }
+.hero > *:not(.hero-bg):nth-child(5) { animation-delay: 0.65s; }
+
+@keyframes heroContentFade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero > *:not(.hero-bg) { animation: none; }
 }
 
 /* ── Header / Nav ────────────────────────────────── */
