@@ -12,6 +12,11 @@
   --border: transparent;
   --accent-bg: #f0f4ff;
   --border-subtle: rgba(0, 32, 96, 0.25);
+  --header-h: 80px;
+}
+
+@media (max-width: 500px) {
+  :root { --header-h: 120px; }
 }
 
 ::selection {
@@ -87,17 +92,17 @@ body::before {
 
 main {
   flex: 1;
-  padding: 80px 0 120px;
+  padding: var(--header-h) 0 120px;
 }
 
 /* ── Hero ────────────────────────────────────────── */
 
 .hero {
   position: relative;
-  min-height: 90vh;
-  margin-top: -160px;
-  padding-top: 160px;
-  padding-bottom: 60px;
+  min-height: 100dvh;
+  margin-top: calc(-1 * var(--header-h));
+  padding-top: calc(var(--header-h) + 48px);
+  padding-bottom: 80px;
 }
 
 .hero-bg {
@@ -119,9 +124,34 @@ main {
   z-index: 1;
 }
 
+.scroll-indicator {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text);
+  opacity: 0.35;
+  z-index: 1;
+  animation: scrollBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.35; }
+  50%       { transform: translateX(-50%) translateY(8px); opacity: 0.6;  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-indicator { animation: none; }
+}
+
 /* ── Header / Nav ────────────────────────────────── */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   border-bottom: 1px solid var(--border);
   padding: 28px 0;
 }
