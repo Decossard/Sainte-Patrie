@@ -3,6 +3,7 @@ import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import HeroScrollEffect from '@/components/HeroScrollEffect'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sainte-patrie.com'),
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
+        <HeroScrollEffect />
         <Header />
         <main id="main-content">
           <div className="container">

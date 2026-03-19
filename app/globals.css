@@ -13,6 +13,7 @@
   --accent-bg: #f0f4ff;
   --border-subtle: rgba(0, 32, 96, 0.25);
   --header-h: 80px;
+  --topo-opacity: 0;
 }
 
 @media (max-width: 500px) {
@@ -49,7 +50,7 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.03;
+  opacity: var(--topo-opacity);
   z-index: -1;
   pointer-events: none;
   animation: topoDrift 40s ease-in-out infinite alternate;
