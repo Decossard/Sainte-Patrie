@@ -162,6 +162,11 @@ export default function Home() {
         is already set. It&rsquo;s proof we don&rsquo;t have to settle. Not anymore.
       </p>
 
+      <div className="status-block">
+        <p className="status-label">Where the project stands now</p>
+        <p>Sainte-Patrie is in its preparation phase. The vision, structure, and public case for the project are in place. The next stage is to build the relationships and support needed to engage Haiti&rsquo;s next legitimate government when that window opens.</p>
+      </div>
+
       <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
 
       <hr className="divider" />

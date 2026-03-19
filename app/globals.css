@@ -179,6 +179,21 @@ p:last-child {
   opacity: 0.7;
 }
 
+.status-block {
+  border-left: 2px solid var(--text);
+  padding: 20px 24px;
+  margin: 40px 0;
+  opacity: 0.75;
+}
+
+.status-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
 a {
   color: var(--text);
 }
