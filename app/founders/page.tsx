@@ -54,9 +54,12 @@ export default function Founders() {
         alignment during the city&rsquo;s formative stage.
       </p>
 
-      <div className="founders-section">
+      <div className="status-block">
+        <p className="status-label">Where the project stands now</p>
+        <p>Sainte-Patrie is in its preparation phase. The vision, structure, and public case for the project are in place. The next stage is to build the relationships and support needed to engage Haiti&rsquo;s next legitimate government when that window opens.</p>
+      </div>
 
-        <hr className="divider" />
+      <div className="founders-section">
 
         <h2>Who We&rsquo;re Looking For</h2>
         <p>
@@ -72,8 +75,6 @@ export default function Founders() {
           Institutions may include foundations, companies, universities, associations,
           diaspora organizations, or other legally constituted entities.
         </p>
-
-        <hr className="divider" />
 
         <h2>What It Means to Be a Founding Institution</h2>
         <p>
@@ -98,8 +99,6 @@ export default function Founders() {
           commune is established.
         </p>
 
-        <hr className="divider" />
-
         <h2>Recognition, Not Reward</h2>
         <p>
           Institutions formally recognized for their contribution may receive forms of
@@ -118,8 +117,6 @@ export default function Founders() {
           involvement, or privileged access to public resources.
         </p>
 
-        <hr className="divider" />
-
         <h2>A Legacy Beyond Land</h2>
         <p>
           This is not about acquiring assets. It&rsquo;s about helping shape a public city
@@ -131,8 +128,6 @@ export default function Founders() {
           success is certain. Those who participate in the founding phase help define
           the conditions under which the city will grow for decades to come.
         </p>
-
-        <hr className="divider" />
 
         <h2>Know the Risk</h2>
         <div className="risk-note">
