@@ -3,19 +3,19 @@ import Link from 'next/link'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: "Sainte-Patrie — Haiti's First Planned City",
+  title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
   description: "Sainte-Patrie is Haiti's first planned city — a new urban development outside Port-au-Prince, designed for stable governance, reliable services, and a functioning economy. Led by Haitians, built for everyday life.",
   keywords: 'Haiti planned city, new city Haiti, charter city Haiti, Port-au-Prince, Haiti urban development, Haiti diaspora investment, Sainte-Patrie, DSDC, Haiti development project, new city Caribbean',
   openGraph: {
     type: 'website',
     siteName: 'Sainte-Patrie',
-    title: "Sainte-Patrie — Haiti's First Planned City",
+    title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
     description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy. Led by Haitians.",
     url: 'https://sainte-patrie.com/',
   },
   twitter: {
     card: 'summary',
-    title: "Sainte-Patrie — Haiti's First Planned City",
+    title: "Sainte-Patrie — Sainte-Patrie — A New Haitian City Designed to Work",
     description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy.",
   },
   alternates: { canonical: 'https://sainte-patrie.com/' },
@@ -26,7 +26,7 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: 'Sainte-Patrie',
   url: 'https://sainte-patrie.com',
-  description: "Haiti's first planned city — proposed, led by Haitians, and designed for everyday life.",
+  description: "A new Haitian city designed for reliable services, safe neighborhoods, and long-term growth. Led by Haitians, prepared for alignment with Haiti's next legitimate government.",
   keywords: 'Haiti planned city, charter city Haiti, new city Haiti, Port-au-Prince, Haiti urban development, Sainte-Patrie',
   publisher: { '@type': 'Organization', name: 'DSDC', url: 'https://sainte-patrie.com' },
 }
@@ -60,10 +60,13 @@ export default function Home() {
       <Script id="schema-org" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <Script id="schema-city" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
 
-      <h1>Haiti&rsquo;s First<br />Planned City.</h1>
+      <h1>A New Haitian City<br />Designed to Work.</h1>
 
       <p className="subheading">
-        A proposed city, led by Haitians and designed for everyday life.
+        Led by Haitians and designed for reliable services, safe neighborhoods, and long-term growth.
+      </p>
+      <p className="subheading-note">
+        The project framework is already developed and is being prepared for future alignment with Haiti&rsquo;s next legitimate government.
       </p>
 
       <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
