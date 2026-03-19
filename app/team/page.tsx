@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'The Team — Sainte-Patrie | DSDC Haiti City Development',
@@ -42,6 +43,16 @@ export default function Team() {
       <Script id="schema-team" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <div className="hero">
+        <div className="hero-bg" aria-hidden="true">
+          <Image
+            src="/hero-team.jpg"
+            alt=""
+            fill
+            priority
+            quality={90}
+            style={{ objectFit: 'cover', objectPosition: 'center 40%', opacity: 0.22 }}
+          />
+        </div>
         <h1>The Work Started Here.</h1>
 
         <p className="subheading">
