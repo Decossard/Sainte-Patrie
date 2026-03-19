@@ -101,8 +101,12 @@ main {
   position: relative;
   min-height: 100dvh;
   margin-top: calc(-1 * var(--header-h));
-  padding-top: calc(var(--header-h) + 48px);
+  padding-top: var(--header-h);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-bg {
@@ -122,26 +126,6 @@ main {
 .hero > *:not(.hero-bg) {
   position: relative;
   z-index: 1;
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--text);
-  opacity: 0.35;
-  z-index: 1;
-  animation: scrollBounce 2.5s ease-in-out infinite;
-}
-
-@keyframes scrollBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.35; }
-  50%       { transform: translateX(-50%) translateY(8px); opacity: 0.6;  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .scroll-indicator { animation: none; }
 }
 
 /* ── Header / Nav ────────────────────────────────── */

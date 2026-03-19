@@ -84,11 +84,6 @@ export default function Home() {
 
         <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
 
-        <div className="scroll-indicator" aria-hidden="true">
-          <svg width="22" height="12" viewBox="0 0 22 12" fill="none">
-            <path d="M1 1L11 11L21 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </div>
       </div>
 
       <hr className="divider" />
