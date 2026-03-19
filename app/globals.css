@@ -102,6 +102,7 @@ main {
   min-height: 100dvh;
   margin-top: calc(-1 * var(--header-h));
   padding-top: calc(var(--header-h) + 48px);
+  text-align: center;
 }
 
 .hero-bg {
