@@ -791,6 +791,35 @@ footer p {
   letter-spacing: 0.03em;
 }
 
+.footer-translate {
+  margin-top: 4px;
+}
+
+/* Google Translate widget */
+.goog-te-gadget {
+  font-family: "Georgia", serif !important;
+  font-size: 0.75rem !important;
+  color: var(--muted) !important;
+  opacity: 0.6;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  font-family: "Georgia", serif !important;
+  font-size: 0.75rem !important;
+  color: var(--text) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+  padding: 2px 0 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  letter-spacing: 0.03em !important;
+}
+
 /* ── Contact address (homepage) ──────────────────── */
 
 .mailing-address {
