@@ -39,12 +39,14 @@ export default function Founders() {
     <>
       <Script id="schema-founders" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <h1>Help Build<br />What Endures.</h1>
+      <div className="hero">
+        <h1>Help Build<br />What Endures.</h1>
 
-      <p className="subheading">
-        Sainte-Patrie is more than a city &mdash; it&rsquo;s a chance to prove that Haiti
-        can design and deliver a lawful, safe, and functioning urban community.
-      </p>
+        <p className="subheading">
+          Sainte-Patrie is more than a city &mdash; it&rsquo;s a chance to prove that Haiti
+          can design and deliver a lawful, safe, and functioning urban community.
+        </p>
+      </div>
 
       <p>
         Led by Haitians and open to contributors from all backgrounds, this initiative

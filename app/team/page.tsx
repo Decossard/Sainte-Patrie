@@ -41,11 +41,13 @@ export default function Team() {
     <>
       <Script id="schema-team" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <h1>The Work Started Here.</h1>
+      <div className="hero">
+        <h1>The Work Started Here.</h1>
 
-      <p className="subheading">
-        Sainte-Patrie is being developed by DSDC, a Haitian-founded development corporation. DSDC designed the governance framework behind the city, holds its institutional architecture, and is responsible for bringing the right partners, capital, and expertise together to build it.
-      </p>
+        <p className="subheading">
+          Sainte-Patrie is being developed by DSDC, a Haitian-founded development corporation. DSDC designed the governance framework behind the city, holds its institutional architecture, and is responsible for bringing the right partners, capital, and expertise together to build it.
+        </p>
+      </div>
 
       <hr className="divider" />
 

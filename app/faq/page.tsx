@@ -39,6 +39,13 @@ export default function Faq() {
   return (
     <>
       <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <div className="hero">
+        <h1>Frequently Asked<br />Questions.</h1>
+        <p className="subheading">
+          Straightforward answers about what Sainte-Patrie is,
+          how it works, and what it means for Haiti.
+        </p>
+      </div>
       <FaqClient />
     </>
   )

@@ -11,11 +11,13 @@ export const metadata: Metadata = {
 export default function Privacy() {
   return (
     <>
-      <h1>Privacy Policy.</h1>
+      <div className="hero">
+        <h1>Privacy Policy.</h1>
 
-      <p className="subheading">
-        We collect limited information, only when you choose to share it. This page explains exactly what, why, and how.
-      </p>
+        <p className="subheading">
+          We collect limited information, only when you choose to share it. This page explains exactly what, why, and how.
+        </p>
+      </div>
 
       <hr className="divider" />
 

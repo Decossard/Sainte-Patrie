@@ -102,11 +102,9 @@ main {
   min-height: 100dvh;
   margin-top: calc(-1 * var(--header-h));
   padding-top: var(--header-h);
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .hero-bg {

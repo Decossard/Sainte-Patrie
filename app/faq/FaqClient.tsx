@@ -25,13 +25,6 @@ export default function FaqClient() {
 
   return (
     <div ref={containerRef}>
-      <h1>Frequently Asked<br />Questions.</h1>
-
-      <p className="subheading">
-        Straightforward answers about what Sainte-Patrie is,
-        how it works, and what it means for Haiti.
-      </p>
-
       <nav className="toc" aria-label="Jump to section">
         <p className="toc-label">Jump to</p>
         <ol className="toc-list">

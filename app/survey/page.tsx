@@ -34,6 +34,12 @@ export default function Survey() {
   return (
     <>
       <Script id="schema-survey" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <div className="hero">
+        <h1>Six Questions.</h1>
+        <p className="subheading">
+          These six questions help us understand who is following Sainte-Patrie and why. We collect your name, email address, and answers &mdash; nothing beyond that.
+        </p>
+      </div>
       <SurveyForm />
     </>
   )

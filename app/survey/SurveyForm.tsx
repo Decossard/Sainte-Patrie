@@ -45,12 +45,6 @@ export default function SurveyForm() {
 
   return (
     <>
-      <h1>Six Questions.</h1>
-
-      <p className="subheading">
-        These six questions help us understand who is following Sainte-Patrie and why. We collect your name, email address, and answers &mdash; nothing beyond that.
-      </p>
-
       <hr className="divider" />
 
       <form onSubmit={handleSubmit}>
