@@ -202,9 +202,9 @@ export default function Home() {
           </span>
         </div>
         <div className="contact-row">
-          <span className="contact-label">WhatsApp</span>
+          <span className="contact-label">Phone</span>
           <span className="contact-value">
-            <a href="https://wa.me/17375372424">(737) 537-2424</a>
+            <a href="tel:+17375372424">(737) 537-2424</a>
           </span>
         </div>
       </address>
