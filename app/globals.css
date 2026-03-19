@@ -800,24 +800,29 @@ footer p {
   font-family: "Georgia", serif !important;
   font-size: 0.75rem !important;
   color: var(--muted) !important;
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
-.goog-te-gadget span {
-  display: none !important;
-}
-
-.goog-te-gadget .goog-te-combo {
-  font-family: "Georgia", serif !important;
-  font-size: 0.75rem !important;
-  color: var(--text) !important;
+.goog-te-gadget-simple {
   background: transparent !important;
   border: none !important;
   border-bottom: 1px solid var(--border-subtle) !important;
   padding: 2px 0 !important;
-  cursor: pointer !important;
-  outline: none !important;
+  font-family: "Georgia", serif !important;
+  font-size: 0.75rem !important;
+}
+
+.goog-te-gadget-simple a,
+.goog-te-gadget-simple a span {
+  color: var(--text) !important;
+  font-family: "Georgia", serif !important;
+  font-size: 0.75rem !important;
   letter-spacing: 0.03em !important;
+  text-decoration: none !important;
+}
+
+.goog-te-gadget-icon {
+  display: none !important;
 }
 
 /* ── Contact address (homepage) ──────────────────── */
