@@ -36,7 +36,6 @@ export default function Footer() {
 
             {/* Meta */}
             <div className="footer-meta">
-              <p className="footer-updated">Updated March 2026</p>
               <div className="footer-translate">
                 <div id="google_translate_element" />
               </div>
