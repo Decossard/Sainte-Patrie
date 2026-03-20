@@ -162,8 +162,10 @@ header {
   right: 0;
   z-index: 100;
   padding: 28px 0;
-  background: rgba(255, 192, 0, var(--header-fill, 0));
-  border-bottom: 6px solid rgba(0, 32, 96, var(--header-fill, 0));
+  background: rgba(255, 255, 255, calc(var(--header-fill, 0) * 0.75));
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(0, 32, 96, calc(var(--header-fill, 0) * 0.1));
 }
 
 header .container {
