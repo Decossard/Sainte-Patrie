@@ -25,13 +25,6 @@ export default function Footer() {
               </address>
             </div>
 
-            {/* Meta */}
-            <div className="footer-meta">
-              <div className="footer-translate">
-                <div id="google_translate_element" />
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -39,7 +32,10 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <p>&copy; 2026 DSDC. All rights reserved.</p>
-          <Link href="/privacy">Privacy Policy</Link>
+          <div className="footer-bottom-right">
+            <div id="google_translate_element" />
+            <Link href="/privacy">Privacy Policy</Link>
+          </div>
         </div>
       </div>
     </footer>
