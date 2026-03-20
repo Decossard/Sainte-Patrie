@@ -1,4 +1,8 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Script from 'next/script'
 import Image from 'next/image'
 
@@ -14,7 +18,7 @@ export const metadata: Metadata = {
     url: 'https://sainte-patrie.com/team',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'The Team — Sainte-Patrie | DSDC Haiti City Development',
     description: 'DSDC is the Haitian-founded development corporation behind Sainte-Patrie — Haiti\'s first planned city. Meet the founder.',
   },
@@ -85,6 +89,11 @@ export default function Team() {
         </p>
         <a className="email-cta" href="mailto:contact@sainte-patrie.com">Get in Touch &rarr;</a>
       </div>
+
+      <p style={{ marginTop: '32px' }}>
+        Interested in contributing to the project?{' '}
+        <Link href="/founders">Learn what it means to become a founding institution &rarr;</Link>
+      </p>
     </>
   )
 }

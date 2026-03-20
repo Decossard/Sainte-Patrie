@@ -1,3 +1,6 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
     url: 'https://sainte-patrie.com/faq',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'FAQ — Sainte-Patrie | Haiti Planned City Questions',
     description: "Common questions about Sainte-Patrie — Haiti's first planned city: governance, services, Port-au-Prince, charter cities, and how the city will work.",
   },

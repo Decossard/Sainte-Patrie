@@ -1,3 +1,6 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
     url: 'https://sainte-patrie.com/',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: "Sainte-Patrie — A Haitian City Designed to Work",
     description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy.",
   },

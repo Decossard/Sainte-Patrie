@@ -7,7 +7,14 @@ import HeroScrollEffect from '@/components/HeroScrollEffect'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sainte-patrie.com'),
-  authors: [{ name: 'DSDC' }],
+  authors: [{ name: 'DSDC — The Decossard Socio-Economic Development Corporation' }],
+  openGraph: {
+    images: [{ url: '/hero-map.jpg', width: 1200, alt: 'Historical map of northeastern Haiti' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/hero-map.jpg'],
+  },
   other: {
     'geo.region': 'HT',
     'geo.placename': 'Haiti',

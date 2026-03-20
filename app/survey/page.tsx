@@ -1,21 +1,24 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import SurveyForm from './SurveyForm'
 
 export const metadata: Metadata = {
-  title: 'Survey — Sainte-Patrie',
+  title: 'Survey — Sainte-Patrie | Share Your Perspective on Haiti's Future',
   description: 'Six questions to help us understand who is paying attention to Sainte-Patrie and why. No account required, no personal data collected.',
   robots: { index: false, follow: true },
   openGraph: {
     type: 'website',
     siteName: 'Sainte-Patrie',
-    title: 'Survey — Sainte-Patrie',
+    title: 'Survey — Sainte-Patrie | Share Your Perspective on Haiti's Future',
     description: 'Six questions to help us understand who is paying attention to Sainte-Patrie and why. No account required, no personal data collected.',
     url: 'https://sainte-patrie.com/survey',
   },
   twitter: {
-    card: 'summary',
-    title: 'Survey — Sainte-Patrie',
+    card: 'summary_large_image',
+    title: 'Survey — Sainte-Patrie | Share Your Perspective on Haiti's Future',
     description: 'Six questions to help us understand who is paying attention to Sainte-Patrie and why.',
   },
   alternates: { canonical: 'https://sainte-patrie.com/survey' },

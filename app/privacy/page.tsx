@@ -1,16 +1,39 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Sainte-Patrie',
-  description: 'Privacy policy for Sainte-Patrie. Learn what data we collect, how we use it, and your rights.',
+  title: 'Privacy Policy — Sainte-Patrie | DSDC',
+  description: 'Privacy policy for Sainte-Patrie, operated by DSDC. Learn what data we collect, how we use it, and your rights.',
   robots: { index: false, follow: true },
   alternates: { canonical: 'https://sainte-patrie.com/privacy' },
+}
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Privacy Policy — Sainte-Patrie',
+  url: 'https://sainte-patrie.com/privacy',
+  description: 'Privacy policy for Sainte-Patrie, operated by DSDC — The Decossard Socio-Economic Development Corporation.',
+  publisher: {
+    '@type': 'Organization',
+    name: 'DSDC — The Decossard Socio-Economic Development Corporation',
+    url: 'https://sainte-patrie.com',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'contact@sainte-patrie.com',
+      contactType: 'customer support',
+    },
+  },
 }
 
 export default function Privacy() {
   return (
     <>
+      <Script id="schema-privacy" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="hero">
         <h1>Privacy Policy.</h1>
 

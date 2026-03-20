@@ -1,3 +1,6 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import Image from 'next/image'
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://sainte-patrie.com/founders',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'Founding Institutions — Sainte-Patrie | Haiti City Development',
     description: "Help build Haiti's first planned city — a new urban alternative outside Port-au-Prince. Become a founding institution of Sainte-Patrie.",
   },
@@ -183,6 +186,11 @@ export default function Founders() {
             Send Your Letter of Intent &rarr;
           </a>
         </div>
+
+        <p style={{ marginTop: '32px' }}>
+          Have questions about the project?{' '}
+          <Link href="/faq">Read the FAQ &rarr;</Link>
+        </p>
 
       </div>
     </>

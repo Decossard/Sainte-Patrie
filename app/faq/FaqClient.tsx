@@ -1,3 +1,6 @@
+// © DSDC — The Decossard Socio-Economic Development Corporation
+// https://sainte-patrie.com
+
 'use client'
 
 import { useRef, useState } from 'react'
@@ -51,7 +54,7 @@ export default function FaqClient() {
 
       {/* 1. About the Project */}
       <section id="about">
-        <p className="faq-section-title">1 &mdash; About the Project</p>
+        <h2 className="faq-section-title">1 &mdash; About the Project</h2>
 
         <FaqItem question="What is Sainte-Patrie?">
           <p className="faq-answer">Sainte-Patrie is a new city being developed in Haiti with one practical purpose: to build an urban environment where institutions function reliably, services operate consistently, and economic opportunity can grow in a stable setting.</p>
@@ -85,7 +88,7 @@ export default function FaqClient() {
 
       {/* 2. What Kind of City This Is */}
       <section id="kind-of-city">
-        <p className="faq-section-title">2 &mdash; What Kind of City This Is</p>
+        <h2 className="faq-section-title">2 &mdash; What Kind of City This Is</h2>
 
         <FaqItem question="Is Sainte-Patrie a private city?">
           <p className="faq-answer">No. Sainte-Patrie will not be a private city.</p>
@@ -112,7 +115,7 @@ export default function FaqClient() {
 
       {/* 3. What This Means for People */}
       <section id="people">
-        <p className="faq-section-title">3 &mdash; What This Means for People</p>
+        <h2 className="faq-section-title">3 &mdash; What This Means for People</h2>
 
         <FaqItem question="What kind of jobs will Sainte-Patrie create?">
           <p className="faq-answer">Sainte-Patrie is designed to generate employment primarily through a service-oriented urban economy.</p>
@@ -142,7 +145,7 @@ export default function FaqClient() {
 
       {/* 4. Services and Quality of Life */}
       <section id="services">
-        <p className="faq-section-title">4 &mdash; Services and Quality of Life</p>
+        <h2 className="faq-section-title">4 &mdash; Services and Quality of Life</h2>
 
         <FaqItem question="How will Sainte-Patrie provide reliable basic services?">
           <p className="faq-answer">Sainte-Patrie is designed so that basic services are planned and operated as integrated urban systems from the outset, rather than installed in isolation as demand arises.</p>
@@ -177,7 +180,7 @@ export default function FaqClient() {
 
       {/* 5. Governance and Legal Structure */}
       <section id="governance">
-        <p className="faq-section-title">5 &mdash; Governance and Legal Structure</p>
+        <h2 className="faq-section-title">5 &mdash; Governance and Legal Structure</h2>
 
         <FaqItem question="What will be the legal status of Sainte-Patrie?">
           <p className="faq-answer">Sainte-Patrie is intended to be formally established as a commune under Haitian law, with the same legal standing as other municipalities in the country.</p>
@@ -206,7 +209,7 @@ export default function FaqClient() {
 
       {/* 6. Economy, Jobs, and Private Sector Development */}
       <section id="economy">
-        <p className="faq-section-title">6 &mdash; Economy, Jobs, and Private Sector Development</p>
+        <h2 className="faq-section-title">6 &mdash; Economy, Jobs, and Private Sector Development</h2>
 
         <FaqItem question="What kind of business environment does the city create?">
           <p className="faq-answer">The fundamental question any investor or entrepreneur asks before committing is whether the system itself can be trusted. Sainte-Patrie is designed to answer that question clearly.</p>
@@ -231,7 +234,7 @@ export default function FaqClient() {
 
       {/* 7. National Role and Decentralization */}
       <section id="national">
-        <p className="faq-section-title">7 &mdash; National Role and Decentralization</p>
+        <h2 className="faq-section-title">7 &mdash; National Role and Decentralization</h2>
 
         <FaqItem question="Will Sainte-Patrie compete with or replace Port-au-Prince?">
           <p className="faq-answer">No. Sainte-Patrie is not intended to compete with or replace Port-au-Prince.</p>
@@ -255,7 +258,7 @@ export default function FaqClient() {
 
       {/* 8. Inclusion and Equal Opportunity */}
       <section id="inclusion">
-        <p className="faq-section-title">8 &mdash; Inclusion and Equal Opportunity</p>
+        <h2 className="faq-section-title">8 &mdash; Inclusion and Equal Opportunity</h2>
 
         <FaqItem question="How will Sainte-Patrie ensure equal opportunity for residents?">
           <p className="faq-answer">The same rules and procedures apply to everyone who lives and works in Sainte-Patrie.</p>
@@ -274,7 +277,7 @@ export default function FaqClient() {
 
       {/* 9. Diaspora Participation */}
       <section id="diaspora">
-        <p className="faq-section-title">9 &mdash; Diaspora Participation</p>
+        <h2 className="faq-section-title">9 &mdash; Diaspora Participation</h2>
 
         <FaqItem question="Why is the Haitian diaspora important to the development of Sainte-Patrie?">
           <p className="faq-answer">The Haitian diaspora represents one of the country&rsquo;s greatest assets. Millions of Haitians living abroad send billions of dollars home each year and carry skills and professional experience across many fields. That combination of financial capacity, professional knowledge, and deep connection to the country represents an asset that few countries of comparable size can claim.</p>
@@ -301,7 +304,7 @@ export default function FaqClient() {
 
       {/* 10. Environment, Natural Capital, and Climate */}
       <section id="environment">
-        <p className="faq-section-title">10 &mdash; Environment, Natural Capital, and Climate</p>
+        <h2 className="faq-section-title">10 &mdash; Environment, Natural Capital, and Climate</h2>
 
         <FaqItem question="How will Sainte-Patrie protect the environment and surrounding ecosystems?">
           <p className="faq-answer">Environmental protection in Sainte-Patrie is built into the planning from the start, not addressed after development has already caused damage.</p>
@@ -316,7 +319,7 @@ export default function FaqClient() {
 
       {/* 11. Development and Implementation */}
       <section id="implementation">
-        <p className="faq-section-title">11 &mdash; Development and Implementation</p>
+        <h2 className="faq-section-title">11 &mdash; Development and Implementation</h2>
 
         <FaqItem question="When will Sainte-Patrie be built?">
           <p className="faq-answer">Sainte-Patrie will be developed gradually through multiple phases rather than appearing all at once.</p>
@@ -341,7 +344,7 @@ export default function FaqClient() {
 
       {/* 12. Context and Comparisons */}
       <section id="context">
-        <p className="faq-section-title">12 &mdash; Context and Comparisons</p>
+        <h2 className="faq-section-title">12 &mdash; Context and Comparisons</h2>
 
         <FaqItem question="What is happening in Port-au-Prince, and why does Haiti need a new urban center?">
           <p className="faq-answer">Port-au-Prince concentrates more than a third of Haiti&rsquo;s total population in a metropolitan area that was never designed at that scale. Decades of rural migration, compounded by disasters and institutional breakdown, have placed the capital under severe strain. Much of the city lacks reliable power, clean water, or functioning public services. In significant parts of Port-au-Prince, gang control of territory has displaced state authority and restricted movement and access to services for millions of residents.</p>
