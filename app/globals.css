@@ -881,6 +881,7 @@ footer {
   background: var(--text);
   color: #ffffff;
   margin: 24px;
+  border-radius: 12px;
 }
 
 .footer-main {
