@@ -26,6 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      {/* © DSDC — The Decossard Socio-Economic Development Corporation | https://sainte-patrie.com */}
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <HeroScrollEffect />
