@@ -162,23 +162,8 @@ header {
   right: 0;
   z-index: 100;
   padding: 28px 0;
-  background: rgba(0, 32, 96, var(--header-fill, 0));
+  background: rgba(255, 192, 0, var(--header-fill, 0));
   border-bottom: 1px solid transparent;
-}
-
-header.header-scrolled .site-name,
-header.header-scrolled nav a {
-  color: rgba(255, 255, 255, 0.7);
-  transition: color 0.25s ease;
-}
-
-header.header-scrolled nav a.active {
-  color: #ffffff;
-}
-
-header:not(.header-scrolled) .site-name,
-header:not(.header-scrolled) nav a {
-  transition: color 0.25s ease;
 }
 
 header .container {
