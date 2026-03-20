@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
   title: 'Page Not Found — Sainte-Patrie',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className="hero" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <HeroBg src="/hero-404.jpg" opacity={0.15} objectPosition="center center" />
       <h1>404.</h1>
       <p className="subheading">This page doesn&rsquo;t exist.</p>
       <p className="subheading-note">
