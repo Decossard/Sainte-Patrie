@@ -163,7 +163,7 @@ header {
   z-index: 100;
   padding: 28px 0;
   background: rgba(255, 192, 0, var(--header-fill, 0));
-  border-bottom: 1px solid transparent;
+  border-bottom: 6px solid rgba(0, 32, 96, var(--header-fill, 0));
 }
 
 header .container {
