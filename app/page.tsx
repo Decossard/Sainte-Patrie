@@ -73,7 +73,7 @@ export default function Home() {
           />
         </div>
 
-        <h1>A New Haitian City<br />Designed to Work.</h1>
+        <h1>A Haitian City<br />Designed to Work.</h1>
 
         <p className="subheading">
           Led by Haitians and designed for reliable services, safe neighborhoods, and long-term growth.
