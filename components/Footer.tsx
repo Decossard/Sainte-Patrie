@@ -25,15 +25,6 @@ export default function Footer() {
               </address>
             </div>
 
-            {/* Navigation */}
-            <nav className="footer-nav" aria-label="Footer navigation">
-              <Link href="/">Home</Link>
-              <Link href="/faq">FAQ</Link>
-              <Link href="/team">Team</Link>
-              <Link href="/founders">Join Us</Link>
-              <Link href="/survey">Survey</Link>
-            </nav>
-
             {/* Meta */}
             <div className="footer-meta">
               <div className="footer-translate">
