@@ -880,7 +880,7 @@ textarea::placeholder {
 footer {
   background: var(--text);
   color: #ffffff;
-  margin: 10px;
+  margin: 24px;
 }
 
 .footer-main {
@@ -1134,6 +1134,10 @@ footer {
 
   section .faq-item {
     padding-left: 16px;
+  }
+
+  footer {
+    margin: 12px;
   }
 
   .footer-grid {
