@@ -149,8 +149,8 @@ export default function SurveyForm() {
 
         {/* Q6 */}
         <div className="survey-question">
-          <p className="survey-q-text"><span className="survey-q-number">06 &mdash;</span> What would make you trust this enough to take the next step?</p>
-          <textarea name="q6_trust" rows={6} placeholder="Share your thoughts…" />
+          <p className="survey-q-text"><span className="survey-q-number">06 &mdash;</span> Anything you&rsquo;d like us to know, ask, or challenge us on? This is an open line.</p>
+          <textarea name="q6_trust" rows={6} placeholder="Share your thoughts, questions, or doubts…" />
           <p className="survey-open-label">Open response</p>
         </div>
 
