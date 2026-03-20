@@ -888,8 +888,9 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr auto;
   gap: 48px;
+  align-items: start;
 }
 
 .footer-name {
@@ -959,6 +960,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: right;
 }
 
 .footer-updated {
