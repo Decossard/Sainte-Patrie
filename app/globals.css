@@ -163,6 +163,21 @@ header {
   z-index: 100;
   border-bottom: 1px solid var(--border);
   padding: 28px 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+header.header-scrolled {
+  background: var(--text);
+  border-bottom-color: var(--text);
+}
+
+header.header-scrolled .site-name,
+header.header-scrolled nav a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header.header-scrolled nav a.active {
+  color: #ffffff;
 }
 
 header .container {

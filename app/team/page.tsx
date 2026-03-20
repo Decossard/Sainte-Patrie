@@ -68,7 +68,7 @@ export default function Team() {
         <p className="team-person-name">McLynn D.</p>
         <p className="team-person-role">Founder, DSDC</p>
         <p>
-          McLynn is Haitian. For nearly a decade he helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. That work was a long study in what institutions have to look like for people to trust them. He applied that study to Haiti.
+          For nearly a decade McLynn helped Haitian families navigate relocation abroad, advising them through complex cross-border decisions. That work was a long study in what institutions have to look like for people to trust them. He applied that study to Haiti.
         </p>
         <p>
           Sainte-Patrie is the result. A governance framework built from Haitian constitutional law, international municipal practice, and a clear-eyed understanding of what has failed before and why.

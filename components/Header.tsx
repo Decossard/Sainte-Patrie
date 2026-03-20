@@ -2,12 +2,38 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 export default function Header() {
   const pathname = usePathname()
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    let rafId: number
+    let ticking = false
+
+    function update() {
+      setScrolled(window.scrollY > 40)
+      ticking = false
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        rafId = requestAnimationFrame(update)
+        ticking = true
+      }
+    }
+
+    update()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      cancelAnimationFrame(rafId)
+    }
+  }, [])
 
   return (
-    <header>
+    <header className={scrolled ? 'header-scrolled' : undefined}>
       <div className="container">
         <Link href="/" className="site-name">Sainte-Patrie</Link>
         <nav>
