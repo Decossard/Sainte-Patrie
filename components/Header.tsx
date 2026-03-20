@@ -2,10 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+
+const FILL_DISTANCE = 160 // px over which background fades in
 
 export default function Header() {
   const pathname = usePathname()
+  const headerRef = useRef<HTMLElement>(null)
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -13,7 +16,9 @@ export default function Header() {
     let ticking = false
 
     function update() {
-      setScrolled(window.scrollY > 40)
+      const fill = Math.min(window.scrollY / FILL_DISTANCE, 1)
+      headerRef.current?.style.setProperty('--header-fill', fill.toFixed(3))
+      setScrolled(fill > 0.6)
       ticking = false
     }
 
@@ -33,7 +38,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={scrolled ? 'header-scrolled' : undefined}>
+    <header ref={headerRef} className={scrolled ? 'header-scrolled' : undefined}>
       <div className="container">
         <Link href="/" className="site-name">Sainte-Patrie</Link>
         <nav>
