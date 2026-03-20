@@ -4,6 +4,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import SurveyForm from './SurveyForm'
+import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
   title: "Survey — Sainte-Patrie | Share Your Perspective on Haiti's Future",
@@ -38,6 +39,7 @@ export default function Survey() {
     <>
       <Script id="schema-survey" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="hero">
+        <HeroBg src="/hero-survey.jpg" opacity={0.15} objectPosition="center center" />
         <h1>Six Questions.</h1>
         <p className="subheading">
           These six questions help us understand who is following Sainte-Patrie and why. We collect your name, email address, and answers &mdash; nothing beyond that.

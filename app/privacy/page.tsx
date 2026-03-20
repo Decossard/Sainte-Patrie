@@ -4,6 +4,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
+import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — Sainte-Patrie | DSDC',
@@ -35,6 +36,7 @@ export default function Privacy() {
     <>
       <Script id="schema-privacy" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="hero">
+        <HeroBg src="/hero-privacy.jpg" opacity={0.13} objectPosition="center center" />
         <h1>Privacy Policy.</h1>
 
         <p className="subheading">
