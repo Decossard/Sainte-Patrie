@@ -4,7 +4,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
-import Image from 'next/image'
+import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
   title: 'Founding Institutions — Sainte-Patrie | Haiti City Development',
@@ -45,16 +45,7 @@ export default function Founders() {
       <Script id="schema-founders" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <div className="hero">
-        <div className="hero-bg" aria-hidden="true">
-          <Image
-            src="/hero-founders.jpg"
-            alt=""
-            fill
-            priority
-            quality={90}
-            style={{ objectFit: 'cover', objectPosition: 'center center', opacity: 0.10 }}
-          />
-        </div>
+        <HeroBg src="/hero-founders.jpg" opacity={0.10} objectPosition="center center" />
         <h1>Help Build<br />What Endures.</h1>
 
         <p className="subheading">

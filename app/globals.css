@@ -121,16 +121,6 @@ main {
   z-index: 0;
   -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 88%);
   mask-image: linear-gradient(to bottom, black 40%, transparent 88%);
-  animation: heroBgFade 1.2s ease forwards;
-}
-
-@keyframes heroBgFade {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-bg { animation: none; }
 }
 
 .hero > *:not(.hero-bg) {

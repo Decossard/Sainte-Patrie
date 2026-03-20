@@ -4,7 +4,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Script from 'next/script'
-import Image from 'next/image'
+import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
   title: "Sainte-Patrie — A Haitian City Designed to Work",
@@ -65,16 +65,7 @@ export default function Home() {
       <Script id="schema-city" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(citySchema) }} />
 
       <div className="hero">
-        <div className="hero-bg" aria-hidden="true">
-          <Image
-            src="/hero-map.jpg"
-            alt=""
-            fill
-            priority
-            quality={90}
-            style={{ objectFit: 'cover', objectPosition: '62% center', opacity: 0.2 }}
-          />
-        </div>
+        <HeroBg src="/hero-map.jpg" opacity={0.2} objectPosition="62% center" />
 
         <h1>A Haitian City<br />Designed to Work.</h1>
 

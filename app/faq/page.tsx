@@ -3,7 +3,7 @@
 
 import type { Metadata } from 'next'
 import Script from 'next/script'
-import Image from 'next/image'
+import HeroBg from '@/components/HeroBg'
 import FaqClient from './FaqClient'
 
 export const metadata: Metadata = {
@@ -44,16 +44,7 @@ export default function Faq() {
     <>
       <Script id="schema-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="hero">
-        <div className="hero-bg" aria-hidden="true">
-          <Image
-            src="/hero-faq.jpg"
-            alt=""
-            fill
-            priority
-            quality={90}
-            style={{ objectFit: 'cover', objectPosition: 'center center', opacity: 0.15 }}
-          />
-        </div>
+        <HeroBg src="/hero-faq.jpg" opacity={0.15} objectPosition="center center" />
         <h1>Frequently Asked<br />Questions.</h1>
         <p className="subheading">
           Straightforward answers about what Sainte-Patrie is,
