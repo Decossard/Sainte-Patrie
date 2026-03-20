@@ -880,6 +880,7 @@ textarea::placeholder {
 footer {
   background: var(--text);
   color: #ffffff;
+  margin: 10px;
 }
 
 .footer-main {
