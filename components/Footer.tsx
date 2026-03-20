@@ -25,6 +25,11 @@ export default function Footer() {
               </address>
             </div>
 
+            {/* Translate — top right */}
+            <div className="footer-translate-top">
+              <div id="google_translate_element" />
+            </div>
+
           </div>
         </div>
       </div>
@@ -32,10 +37,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <p>&copy; 2026 DSDC. All rights reserved.</p>
-          <div className="footer-bottom-right">
-            <div id="google_translate_element" />
-            <Link href="/privacy">Privacy Policy</Link>
-          </div>
+          <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>
     </footer>
