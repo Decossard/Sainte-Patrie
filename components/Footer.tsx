@@ -36,7 +36,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; 2026 DSDC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} DSDC. All rights reserved.</p>
           <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>

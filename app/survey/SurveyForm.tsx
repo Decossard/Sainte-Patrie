@@ -19,18 +19,30 @@ function Options({ name, options }: { name: string; options: string[] }) {
 
 export default function SurveyForm() {
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    const form = e.currentTarget
-    const data = new FormData(form)
-    const response = await fetch('https://formspree.io/f/mlgppwoe', {
-      method: 'POST',
-      body: data,
-      headers: { Accept: 'application/json' },
-    })
-    if (response.ok) {
-      setSubmitted(true)
+    setLoading(true)
+    setError(null)
+    try {
+      const form = e.currentTarget
+      const data = new FormData(form)
+      const response = await fetch('https://formspree.io/f/mlgppwoe', {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      })
+      if (response.ok) {
+        setSubmitted(true)
+      } else {
+        setError('Something went wrong. Please try again or email us at contact@sainte-patrie.com.')
+      }
+    } catch {
+      setError('Unable to reach the server. Please check your connection and try again.')
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -142,8 +154,12 @@ export default function SurveyForm() {
           <p className="survey-open-label">Open response</p>
         </div>
 
+        {error && <p className="survey-error">{error}</p>}
+
         <div className="survey-submit">
-          <button type="submit" className="survey-btn">Submit your answers &rarr;</button>
+          <button type="submit" className="survey-btn" disabled={loading}>
+            {loading ? 'Sending…' : 'Submit your answers →'}
+          </button>
         </div>
 
       </form>

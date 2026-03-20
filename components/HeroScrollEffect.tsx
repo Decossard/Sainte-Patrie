@@ -19,6 +19,7 @@ export default function HeroScrollEffect() {
     function update() {
       const progress = Math.min(Math.max(window.scrollY / threshold, 0), 1)
       root.style.setProperty('--topo-opacity', (progress * 0.03).toFixed(4))
+      root.style.setProperty('--topo-animation-state', progress > 0 ? 'running' : 'paused')
       ticking = false
     }
 
