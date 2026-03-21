@@ -179,7 +179,10 @@ export default function Founders() {
           </a>
         </div>
 
-        <Link className="cta" href="/faq">Read the FAQ &rarr;</Link>
+        <p style={{ marginTop: '32px' }}>
+          Have questions about the project?{' '}
+          <Link href="/faq">Read the FAQ &rarr;</Link>
+        </p>
 
       </div>
     </>
