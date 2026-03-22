@@ -1153,6 +1153,10 @@ footer {
     gap: 40px;
   }
 
+  .footer-translate-top {
+    text-align: left;
+  }
+
   .footer-bottom .container {
     flex-direction: column;
     align-items: flex-start;
