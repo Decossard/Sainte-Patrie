@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </main>
         <Footer />
+        <Analytics />
         <Script id="google-translate-init" strategy="afterInteractive">{`
           window.googleTranslateElementInit = function() {
             new google.translate.TranslateElement({
