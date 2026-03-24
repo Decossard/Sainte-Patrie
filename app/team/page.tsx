@@ -68,6 +68,7 @@ export default function Team() {
         <p>
           Sainte-Patrie is the result. A governance framework built from Haitian constitutional law, international municipal practice, and a clear-eyed understanding of what has failed before and why.
         </p>
+        <a href="/founder-statement.pdf" target="_blank" rel="noopener noreferrer">Read the Founder Statement &rarr;</a>
       </div>
 
       <div className="intent-box">
