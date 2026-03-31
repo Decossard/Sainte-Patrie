@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://sainte-patrie.com'),
   authors: [{ name: 'Sainte-Patrie' }],
   openGraph: {
-    images: [{ url: '/hero-map.jpg', width: 1200, alt: 'Historical map of northeastern Haiti' }],
+    images: [{ url: '/hero-map.jpg', width: 1200, height: 630, alt: 'Historical map of Haiti' }],
   },
   twitter: {
     card: 'summary_large_image',

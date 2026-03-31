@@ -7,19 +7,19 @@ import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
   title: "Sainte-Patrie — A Haitian City Designed to Work",
-  description: "Sainte-Patrie is Haiti's first planned city — a new urban development outside Port-au-Prince, designed for stable governance, reliable services, and a functioning economy. Led by Haitians, built for everyday life.",
-  keywords: 'Haiti planned city, new city Haiti, charter city Haiti, Port-au-Prince, Haiti urban development, Haiti diaspora investment, Sainte-Patrie, Haiti development project, new city Caribbean',
+  description: "Sainte-Patrie is Haiti's first planned city — a new urban center outside Port-au-Prince, built for reliable services, safe neighborhoods, and long-term growth.",
+  keywords: 'Haiti planned city, new city Haiti, Port-au-Prince, Haiti urban development, Haiti diaspora investment, Sainte-Patrie, Haiti city development, Haiti development project, second city Haiti, new city Caribbean',
   openGraph: {
     type: 'website',
     siteName: 'Sainte-Patrie',
     title: "Sainte-Patrie — A Haitian City Designed to Work",
-    description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy. Led by Haitians.",
+    description: "A new Haitian city designed to offer what Port-au-Prince cannot: reliable services, safe neighborhoods, and a functioning urban economy. Led by Haitians.",
     url: 'https://sainte-patrie.com/',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Sainte-Patrie — A Haitian City Designed to Work",
-    description: "A new city in Haiti — designed to offer what Port-au-Prince cannot: stable governance, reliable services, and a functioning urban economy.",
+    description: "A new Haitian city — built for reliable services, safe neighborhoods, and long-term growth outside Port-au-Prince.",
   },
   alternates: { canonical: 'https://sainte-patrie.com/' },
 }
@@ -30,7 +30,6 @@ const websiteSchema = {
   name: 'Sainte-Patrie',
   url: 'https://sainte-patrie.com',
   description: "A new Haitian city designed for reliable services, safe neighborhoods, and long-term growth. Led by Haitians.",
-  keywords: 'Haiti planned city, charter city Haiti, new city Haiti, Port-au-Prince, Haiti urban development, Sainte-Patrie',
   publisher: { '@type': 'Organization', name: 'Sainte-Patrie', url: 'https://sainte-patrie.com' },
 }
 
@@ -38,9 +37,8 @@ const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Sainte-Patrie',
-  description: 'Haitian-founded initiative designing and developing Sainte-Patrie, Haiti\'s first planned city.',
+  description: 'Haitian-founded initiative developing Sainte-Patrie, Haiti\'s first planned city.',
   url: 'https://sainte-patrie.com',
-  keywords: 'Haiti planned city, new city Haiti, Haiti development, Port-au-Prince, charter city Haiti',
   contactPoint: { '@type': 'ContactPoint', email: 'contact@sainte-patrie.com', contactType: 'general' },
 }
 
@@ -49,7 +47,7 @@ const citySchema = {
   '@type': 'City',
   '@id': 'https://sainte-patrie.com/#city',
   name: 'Sainte-Patrie',
-  description: "Haiti's first planned city — a new urban development designed for stable governance, reliable infrastructure, and economic opportunity outside Port-au-Prince.",
+  description: "Haiti's first planned city — a new urban development designed for reliable infrastructure, quality services, and economic opportunity outside Port-au-Prince.",
   url: 'https://sainte-patrie.com',
   containedInPlace: { '@type': 'Country', name: 'Haiti', identifier: 'HT' },
   developer: { '@type': 'Organization', name: 'Sainte-Patrie', url: 'https://sainte-patrie.com' },
