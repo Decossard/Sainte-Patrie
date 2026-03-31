@@ -16,9 +16,6 @@
   --topo-opacity: 0;
 }
 
-@media (max-width: 500px) {
-  :root { --header-h: 120px; }
-}
 
 ::selection {
   background: var(--text);
@@ -790,29 +787,6 @@ footer {
   .feature {
     grid-template-columns: 1fr;
     gap: 8px;
-  }
-
-  .page-links {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-
-  .page-link:last-child:nth-child(odd) {
-    grid-column: span 1;
-  }
-
-  header .container {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    gap: 14px 20px;
-  }
-
-  section .faq-item {
-    padding-left: 16px;
   }
 
   footer {
