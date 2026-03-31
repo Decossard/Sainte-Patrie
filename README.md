@@ -1,6 +1,6 @@
 # Sainte-Patrie
 
-Website for **Sainte-Patrie**, Haiti's first planned city — a new urban development outside Port-au-Prince, designed for stable governance, reliable services, and a functioning economy. Led by Haitians, built for everyday life.
+Website for **Sainte-Patrie**, Haiti's first planned city — a new urban center outside Port-au-Prince, built for reliable services, safe neighborhoods, and long-term growth.
 
 **Live site:** [sainte-patrie.com](https://sainte-patrie.com)
 
@@ -8,9 +8,9 @@ Website for **Sainte-Patrie**, Haiti's first planned city — a new urban develo
 
 ## About the Project
 
-Sainte-Patrie is developed by **DSDC**, a Haitian-founded development corporation. The city is designed to offer what Port-au-Prince cannot: a functioning urban alternative with planned infrastructure, consistent public services, and an economy built to grow.
+Sainte-Patrie is a Haitian-founded initiative developing Haiti's first planned city. The city is designed to offer what Port-au-Prince cannot: a functioning urban alternative with planned infrastructure, consistent public services, and an economy built to grow.
 
-The website presents the project, invites institutional partners, and collects input from the public through a survey.
+The website presents the project and collects input from the public through a survey.
 
 ---
 
@@ -19,9 +19,6 @@ The website presents the project, invites institutional partners, and collects i
 | Route | Description |
 |---|---|
 | `/` | Homepage — project overview and vision |
-| `/faq` | Frequently asked questions about governance, services, and the city |
-| `/founders` | Invitation for founding institutions to contribute |
-| `/team` | The founder and the organization behind the project |
 | `/survey` | Public survey to gather input from interested parties |
 | `/privacy` | Privacy policy |
 
@@ -32,6 +29,7 @@ The website presents the project, invites institutional partners, and collects i
 - **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
 - **Language:** TypeScript
 - **Styling:** Global CSS with CSS custom properties
+- **Analytics:** [Vercel Analytics](https://vercel.com/analytics)
 - **Forms:** [Formspree](https://formspree.io/)
 - **Deployment:** [Vercel](https://vercel.com/)
 
@@ -46,14 +44,13 @@ app/
 ├── page.tsx            # Homepage
 ├── not-found.tsx       # 404 page
 ├── sitemap.ts          # Auto-generated sitemap
-├── faq/                # FAQ page
-├── founders/           # Founding institutions page
-├── team/               # Team page
 ├── survey/             # Public survey
 └── privacy/            # Privacy policy
 components/
 ├── Header.tsx          # Site header with navigation
-└── Footer.tsx          # Site footer
+├── Footer.tsx          # Site footer
+├── HeroBg.tsx          # Hero background image with fade-in
+└── HeroScrollEffect.tsx # Scroll-driven topo opacity effect
 public/
 └── robots.txt
 ```
@@ -73,5 +70,4 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Contact
 
-General enquiries: [contact@sainte-patrie.com](mailto:contact@sainte-patrie.com)
-Founding institutions: [founders@sainte-patrie.com](mailto:founders@sainte-patrie.com)
+[contact@sainte-patrie.com](mailto:contact@sainte-patrie.com)
