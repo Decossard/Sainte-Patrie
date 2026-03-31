@@ -1,4 +1,3 @@
-// © DSDC — The Decossard Socio-Economic Development Corporation
 // https://sainte-patrie.com
 
 import type { Metadata } from 'next'
@@ -7,8 +6,8 @@ import Script from 'next/script'
 import HeroBg from '@/components/HeroBg'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Sainte-Patrie | DSDC',
-  description: 'Privacy policy for Sainte-Patrie, operated by DSDC. Learn what data we collect, how we use it, and your rights.',
+  title: 'Privacy Policy — Sainte-Patrie',
+  description: 'Privacy policy for Sainte-Patrie. Learn what data we collect, how we use it, and your rights.',
   robots: { index: false, follow: true },
   alternates: { canonical: 'https://sainte-patrie.com/privacy' },
 }
@@ -18,10 +17,10 @@ const schema = {
   '@type': 'WebPage',
   name: 'Privacy Policy — Sainte-Patrie',
   url: 'https://sainte-patrie.com/privacy',
-  description: 'Privacy policy for Sainte-Patrie, operated by DSDC — The Decossard Socio-Economic Development Corporation.',
+  description: 'Privacy policy for Sainte-Patrie.',
   publisher: {
     '@type': 'Organization',
-    name: 'DSDC — The Decossard Socio-Economic Development Corporation',
+    name: 'Sainte-Patrie',
     url: 'https://sainte-patrie.com',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -48,7 +47,7 @@ export default function Privacy() {
 
       <h2>Who We Are</h2>
       <p>
-        This website is operated by DSDC, a Haitian-founded development corporation and the organization behind the Sainte-Patrie city project. For any questions about this policy or your data, contact us at <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>.
+        This website is operated by the team behind the Sainte-Patrie city project. For any questions about this policy or your data, contact us at <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>.
       </p>
 
       <hr className="divider" />
@@ -97,7 +96,7 @@ export default function Privacy() {
 
       <h2>Who Has Access</h2>
       <p>
-        Only members of the DSDC team directly involved in the Sainte-Patrie project have access to submitted data. Access is limited to those who need it to follow up with interested parties or to analyze project interest.
+        Only members of the Sainte-Patrie team directly involved in the project have access to submitted data. Access is limited to those who need it to follow up with interested parties or to analyze project interest.
       </p>
 
       <hr className="divider" />

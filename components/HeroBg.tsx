@@ -1,4 +1,3 @@
-// © DSDC — The Decossard Socio-Economic Development Corporation
 // https://sainte-patrie.com
 
 'use client'

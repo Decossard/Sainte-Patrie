@@ -1,4 +1,3 @@
-// © DSDC — The Decossard Socio-Economic Development Corporation
 // https://sainte-patrie.com
 
 import type { Metadata } from 'next'
@@ -31,7 +30,7 @@ const schema = {
   name: 'Survey — Sainte-Patrie',
   url: 'https://sainte-patrie.com/survey',
   description: 'Six questions to help us understand who is paying attention to Sainte-Patrie and why. No account required, no personal data collected.',
-  publisher: { '@type': 'Organization', name: 'DSDC', url: 'https://sainte-patrie.com' },
+  publisher: { '@type': 'Organization', name: 'Sainte-Patrie', url: 'https://sainte-patrie.com' },
 }
 
 export default function Survey() {

@@ -1,4 +1,3 @@
-// © DSDC — The Decossard Socio-Economic Development Corporation
 // https://sainte-patrie.com
 
 import type { Metadata } from 'next'
@@ -9,7 +8,7 @@ import HeroBg from '@/components/HeroBg'
 export const metadata: Metadata = {
   title: "Sainte-Patrie — A Haitian City Designed to Work",
   description: "Sainte-Patrie is Haiti's first planned city — a new urban development outside Port-au-Prince, designed for stable governance, reliable services, and a functioning economy. Led by Haitians, built for everyday life.",
-  keywords: 'Haiti planned city, new city Haiti, charter city Haiti, Port-au-Prince, Haiti urban development, Haiti diaspora investment, Sainte-Patrie, DSDC, Haiti development project, new city Caribbean',
+  keywords: 'Haiti planned city, new city Haiti, charter city Haiti, Port-au-Prince, Haiti urban development, Haiti diaspora investment, Sainte-Patrie, Haiti development project, new city Caribbean',
   openGraph: {
     type: 'website',
     siteName: 'Sainte-Patrie',
@@ -30,20 +29,19 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: 'Sainte-Patrie',
   url: 'https://sainte-patrie.com',
-  description: "A new Haitian city designed for reliable services, safe neighborhoods, and long-term growth. Led by Haitians, prepared for alignment with Haiti's next legitimate government.",
+  description: "A new Haitian city designed for reliable services, safe neighborhoods, and long-term growth. Led by Haitians.",
   keywords: 'Haiti planned city, charter city Haiti, new city Haiti, Port-au-Prince, Haiti urban development, Sainte-Patrie',
-  publisher: { '@type': 'Organization', name: 'DSDC', url: 'https://sainte-patrie.com' },
+  publisher: { '@type': 'Organization', name: 'Sainte-Patrie', url: 'https://sainte-patrie.com' },
 }
 
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'DSDC',
-  description: 'Haitian-founded development corporation designing and developing Sainte-Patrie, Haiti\'s first planned city.',
+  name: 'Sainte-Patrie',
+  description: 'Haitian-founded initiative designing and developing Sainte-Patrie, Haiti\'s first planned city.',
   url: 'https://sainte-patrie.com',
   keywords: 'Haiti planned city, new city Haiti, Haiti development, Port-au-Prince, charter city Haiti',
   contactPoint: { '@type': 'ContactPoint', email: 'contact@sainte-patrie.com', contactType: 'general' },
-  founder: { '@type': 'Person', name: 'McLynn H. L. Décossard', jobTitle: 'Founder', nationality: 'Haitian' },
 }
 
 const citySchema = {
@@ -54,7 +52,7 @@ const citySchema = {
   description: "Haiti's first planned city — a new urban development designed for stable governance, reliable infrastructure, and economic opportunity outside Port-au-Prince.",
   url: 'https://sainte-patrie.com',
   containedInPlace: { '@type': 'Country', name: 'Haiti', identifier: 'HT' },
-  developer: { '@type': 'Organization', name: 'DSDC', url: 'https://sainte-patrie.com' },
+  developer: { '@type': 'Organization', name: 'Sainte-Patrie', url: 'https://sainte-patrie.com' },
 }
 
 export default function Home() {
@@ -73,7 +71,7 @@ export default function Home() {
           Led by Haitians and designed for reliable services, safe neighborhoods, and long-term growth.
         </p>
         <p className="subheading-note">
-          The project framework is already developed and is being prepared for future alignment with Haiti&rsquo;s next legitimate government.
+          The project framework is developed. The team is building the partnerships needed to move forward.
         </p>
 
         <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
@@ -172,26 +170,6 @@ export default function Home() {
       </p>
 
       <Link className="cta" href="/survey">Take the Survey &rarr;</Link>
-
-      <hr className="divider" />
-
-      <div className="page-links">
-        <Link className="page-link" href="/faq">
-          <span className="page-link-label">Learn more</span>
-          <span className="page-link-title">Frequently Asked Questions</span>
-          <span className="page-link-desc">Everything about the project &mdash; governance, services, economy, and how the city will work.</span>
-        </Link>
-        <Link className="page-link" href="/founders">
-          <span className="page-link-label">Get involved</span>
-          <span className="page-link-title">Become a Founding Institution</span>
-          <span className="page-link-desc">For institutions ready to contribute before success is guaranteed.</span>
-        </Link>
-        <Link className="page-link" href="/team">
-          <span className="page-link-label">Who we are</span>
-          <span className="page-link-title">The Team</span>
-          <span className="page-link-desc">The person who started this, and who is being brought in to build it.</span>
-        </Link>
-      </div>
 
     </>
   )

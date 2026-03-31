@@ -8,7 +8,7 @@ import HeroScrollEffect from '@/components/HeroScrollEffect'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sainte-patrie.com'),
-  authors: [{ name: 'DSDC — The Decossard Socio-Economic Development Corporation' }],
+  authors: [{ name: 'Sainte-Patrie' }],
   openGraph: {
     images: [{ url: '/hero-map.jpg', width: 1200, alt: 'Historical map of northeastern Haiti' }],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      {/* © DSDC — The Decossard Socio-Economic Development Corporation | https://sainte-patrie.com */}
+      {/* https://sainte-patrie.com */}
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <HeroScrollEffect />

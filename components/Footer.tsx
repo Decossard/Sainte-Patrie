@@ -13,14 +13,7 @@ export default function Footer() {
               <p className="footer-tagline">A Haitian city designed to work.</p>
               <address className="footer-contact">
                 <p>
-                  3801 N Capital of Texas Hwy, Ste. E240-3366<br />
-                  Austin, TX&nbsp;78746
-                </p>
-                <p>
                   <a href="mailto:contact@sainte-patrie.com">contact@sainte-patrie.com</a>
-                </p>
-                <p>
-                  <a href="tel:+17375372424">(737)&nbsp;537-2424</a>
                 </p>
               </address>
             </div>
@@ -36,7 +29,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} DSDC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sainte-Patrie. All rights reserved.</p>
           <Link href="/privacy">Privacy Policy</Link>
         </div>
       </div>
